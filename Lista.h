@@ -22,12 +22,24 @@ public:
     void imprimirLista();
     void eliminarDuplicados();
     bool esAscendente();
+    void espejarLista();
+    int  mitadLista();
+    int enesimoDesdeFinal(int n );
+    int eliminarValor( int n);
+    int sumarNodos();
+    bool contiene(int buscado);
 
 private:
     Nodo* head = nullptr;
     void addNodoRec(Nodo*& nodo , int valor);
     void eliminarDuplicadosRec(Nodo* nodo);
     bool esAscendenteRec(Nodo* nodo);
+    Nodo* espejarListaRec(Nodo* nodo);
+    int mitadListaIt(Nodo* nodo);
+    int enesimoDesdeFinalIt(Nodo* nodo,int n );
+    int eliminarValorRec(Nodo* nodo , int n);
+    int sumarNodosRec(Nodo* head);
+    bool contieneRec(Nodo* nodo, int buscado);
 };
 
 
